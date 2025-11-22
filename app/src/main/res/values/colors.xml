@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores Padrão -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Nossa Nova Paleta de Cores -->
+    <color name="verde_pinho">#283D3B</color>
+    <color name="azul_oceano">#197278</color>
+    <color name="areia">#EDDDD4</color>
+    <color name="terracota">#C44536</color>
+    <color name="mogno">#772E25</color>
+    <color name="verde_pinho_claro">#3A504D</color>
+
+</resources>

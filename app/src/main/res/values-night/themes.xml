@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Escuro Customizado -->
+    <style name="Base.Theme.DiarioDeViagens" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Cores Primárias (usadas para a barra de ferramentas e status ) -->
+        <item name="colorPrimary">@color/verde_pinho</item>
+        <item name="colorPrimaryVariant">@color/verde_pinho</item>
+        <item name="colorOnPrimary">@color/areia</item> <!-- Cor do texto e ícones na barra -->
+
+        <!-- Cores Secundárias (Destaques, FAB) -->
+        <item name="colorSecondary">@color/terracota</item>
+        <item name="colorSecondaryVariant">@color/terracota</item>
+        <item name="colorOnSecondary">@color/white</item> <!-- Cor do ícone no FAB -->
+
+        <!-- Cor da Barra de Status -->
+        <item name="android:statusBarColor">@color/verde_pinho</item>
+
+        <!-- Cor de Fundo Padrão das Telas -->
+        <item name="android:windowBackground">@color/verde_pinho</item>
+
+        <!-- Cor Padrão do Texto -->
+        <item name="android:textColor">@color/areia</item>
+
+        <!-- Cor dos cards da lista -->
+        <item name="colorSurface">@color/verde_pinho_claro</item>
+
+    </style>
+
+    <style name="Theme.DiarioDeViagens" parent="Base.Theme.DiarioDeViagens" />
+</resources>

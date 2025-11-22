@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- CardView cria um "cartão" com sombra e cantos arredondados, fica bem bonito. -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="?attr/colorSurface">
+
+
+
+    <!-- LinearLayout organiza os textos um abaixo do outro. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- TextView para o nome da viagem -->
+        <TextView
+            android:id="@+id/textViewNomeViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Viagem para a Praia" /> <!-- 'tools:text' é só um texto de exemplo -->
+
+        <!-- TextView para as datas da viagem -->
+        <TextView
+            android:id="@+id/textViewDatasViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            tools:text="10/12/2025 - 20/12/2025" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

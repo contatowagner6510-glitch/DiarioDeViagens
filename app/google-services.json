@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "824459792058",
+    "project_id": "diariodeviagensapp-59ce5",
+    "storage_bucket": "diariodeviagensapp-59ce5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824459792058:android:f6c03cab54d07408ae3c83",
+        "android_client_info": {
+          "package_name": "com.example.diariodeviagens"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8JNlyjAzGU_8qjJOapzSDLNnZKO_Bv4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".DetalhesViagemActivity">
+
+    <!-- 1. A "CASA" PARA OS BOTÕES DO MENU -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_detalhes"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- 2. O RESTO DO SEU CONTEÚDO (NÃO MUDA NADA AQUI DENTRO ) -->
+    <!-- Usamos um FrameLayout para colocar o FAB sobre a lista -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Seu LinearLayout com o mapa, textos e a lista de pontos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Mapa -->
+                <org.osmdroid.views.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <!-- Container para os textos -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewNomeViagemDetalhes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        tools:text="Viagem para a Praia" />
+
+                    <TextView
+                        android:id="@+id/textViewDatasViagemDetalhes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        tools:text="01/01/2024 - 10/01/2024" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Pontos Visitados"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+                </LinearLayout>
+
+                <!-- Container para a lista de pontos -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewPontosVisitados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_ponto_visitado" />
+
+                    <TextView
+                        android:id="@+id/textViewListaVazia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:text="Nenhum ponto visitado ainda.\nClique no botão '+' para adicionar o primeiro!"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- BOTÃO FLUTUANTE (FAB) -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdicionarPonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add"
+            app:tint="@color/white"
+            android:contentDescription="Adicionar novo ponto visitado" />
+
+    </FrameLayout>
+
+</LinearLayout>

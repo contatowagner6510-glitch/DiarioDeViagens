@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Base do Aplicativo com a Nova Paleta -->
+    <style name="Base.Theme.DiarioDeViagens" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Cor Primária (Barras de Ferramentas ) -->
+        <item name="colorPrimary">@color/azul_oceano</item>
+        <item name="colorPrimaryVariant">@color/azul_oceano</item>
+        <item name="colorOnPrimary">@color/white</item> <!-- Cor do texto e ícones na barra -->
+
+        <!-- Cor Secundária (Destaques, FAB) -->
+        <item name="colorSecondary">@color/terracota</item>
+        <item name="colorSecondaryVariant">@color/terracota</item>
+        <item name="colorOnSecondary">@color/white</item> <!-- Cor do ícone no FAB -->
+
+        <!-- Cor da Barra de Status (onde fica a hora e a bateria) -->
+        <item name="android:statusBarColor">@color/azul_oceano</item>
+
+        <!-- Cor de Fundo Padrão das Telas -->
+        <item name="android:windowBackground">@color/areia</item>
+
+        <!-- Cor Padrão do Texto -->
+        <item name="android:textColor">@color/verde_pinho</item>
+
+
+
+        <!-- Desabilita a sobreposição de cores do Material You -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <!-- Garante que os botões usem as cores certas -->
+        <item name="colorButtonNormal">@color/azul_oceano</item>
+
+    </style>
+
+    <style name="Theme.DiarioDeViagens" parent="Base.Theme.DiarioDeViagens" />
+</resources>

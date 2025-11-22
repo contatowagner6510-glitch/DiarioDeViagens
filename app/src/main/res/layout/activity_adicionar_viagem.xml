@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    tools:context=".AdicionarViagemActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da Viagem"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextNomeViagem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Ex: Férias em família"
+    android:inputType="textCapWords" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Data de Início"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextDataInicio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="dd/mm/aaaa"
+    android:inputType="date"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Data de Fim"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextDataFim"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="dd/mm/aaaa"
+    android:inputType="date"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/buttonSalvarViagem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Salvar Viagem"/>
+
+</LinearLayout>

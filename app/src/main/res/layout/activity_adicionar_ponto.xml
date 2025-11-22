@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".AdicionarPontoActivity">
+
+        <!-- Placeholder para a imagem -->
+        <ImageView
+            android:id="@+id/imageViewPontoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#E0E0E0"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="Pré-visualização da foto do local" />
+
+        <Button
+            android:id="@+id/buttonSelecionarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Selecionar Foto" />
+
+        <!-- Campo para o nome do local -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nome do Local"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNomeLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Torre Eiffel, Praia de Copacabana"
+            android:inputType="textCapWords" />
+
+        <!-- Campo para as anotações -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Anotações"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descreva sua experiência neste local..."
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top" />
+
+        <!-- Botão para salvar -->
+        <Button
+            android:id="@+id/buttonSalvarPonto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Salvar Ponto Visitado" />
+
+    </LinearLayout>
+</ScrollView>
