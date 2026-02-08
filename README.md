@@ -130,6 +130,8 @@ Execute o aplicativo em um emulador ou dispositivo físico.
 5.
 Prints do aplicativo
 
-![Tela inicial do projeto](assets/print1.png)
+![Tela inicial do projeto]
+![print 1](https://github.com/user-attachments/assets/157120e4-8fe3-4e8c-9f7b-fe0d88d6010c)
 
-![Tela de pontos visitados na viagem](assets/print2.png)
+![Tela de pontos visitados na viagem]
+![print 2](https://github.com/user-attachments/assets/fad5cd16-8268-46e0-a031-78a99621a6f9)
