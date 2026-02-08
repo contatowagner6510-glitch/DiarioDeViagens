@@ -127,3 +127,9 @@ Execute o aplicativo em um emulador ou dispositivo físico.
 
 
 
+5.
+Prints do aplicativo
+
+![Tela inicial do projeto](assets/print 1.png)
+
+![Tela de pontos visitados na viagem](assets/print 2.png)
